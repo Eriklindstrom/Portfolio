@@ -1,0 +1,579 @@
+body, h1,h2,h3,h4,h5,h6 {
+    font-family: "Raleway", sans-serif;
+    color: black;
+}
+p {
+    font-family: "Raleway", sans-serif;
+    color: black;
+}
+body {
+  background-color:ghostwhite;
+    margin: 0;
+    padding: 0;
+}
+
+.overlay {
+    height: 100vh;
+    width: 100%;
+    background-color: #660025;
+    background-image: linear-gradient(to bottom right, #558eff, #ff9c55);
+}
+.overlay2 {
+    height: 25vh;
+    width: 100%;
+    background-color: #660025;
+    background-image: linear-gradient(to bottom right, #558eff, #ff9c55);
+}
+
+input {
+  display: none;
+  visibility: hidden;
+}
+label {
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+  color: #666;
+}
+label:hover {
+  color: #000;
+}
+label::before {
+  font-family: Consolas, monaco, monospace;
+  font-weight: bold;
+  font-size: 15px;
+  content: "+";
+  vertical-align: text-top;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%);
+}
+#expand {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+section {
+  padding: 0 20px;
+}
+#toggle:checked ~ #expand {
+  height: auto;
+}
+#toggle:checked ~ label::before {
+  content: "-";
+}
+
+
+
+#expand1 {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+#toggle1:checked ~ #expand1 {
+  height: auto;
+}
+#toggle1:checked ~ label::before {
+  content: "-";
+}
+
+#expand2 {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+#toggle2:checked ~ #expand2 {
+  height: auto;
+}
+#toggle2:checked ~ label::before {
+  content: "-";
+}
+
+#expand3 {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+#toggle3:checked ~ #expand3 {
+  height: auto;
+}
+#toggle3:checked ~ label::before {
+  content: "-";
+}
+
+#expand4 {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+#toggle4:checked ~ #expand4 {
+  height: auto;
+}
+#toggle4:checked ~ label::before {
+  content: "-";
+}
+.gallery {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.gallerypic {
+    padding: 5%;
+    width: 90%;
+    text-align: center;
+    justify-self: center;   
+    align-self: center;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+.toppennav {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.bottomnav {
+    left: 0;
+    top: 0;
+    bottom: none;
+    width: 100%;
+    position: fixed;
+}
+    
+    #projectTitle {
+        display: none;
+    }
+   
+.topnav {
+  background-color: #3c7fcc;
+  background: linear-gradient(to left, #4c8dbf,#255994);
+  /*background: linear-gradient(141deg, #3c7fcc 0%, #558eff 51%, #ff9c55 75%);
+*/
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 17px; 
+}
+
+.active {
+  background-color: #ff7c54;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 30px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+#dropdown-content {
+  display: none;
+  position: absolute;
+  top: 48px;
+  background-color: floralwhite;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+    position: relative;
+}
+
+.dropdown:hover #dropdown-content {
+  display: block;
+}
+
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #ff7c54;
+  color: white;
+}
+
+#dropdown-content a:hover {
+  background-color: #ff7c54;
+  color: white;
+}
+
+    
+    #about {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    #profilePicture {
+        justify-self: center;   
+        align-self: center;
+        border-radius: 50%;
+        border: 3px solid white; 
+        width: 50%;
+        height: auto;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+    #title {
+        color:ghostwhite;
+        padding-top: 20%;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 80px;
+    }
+    #profession {
+        color:ghostwhite;
+        font-size: 25px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #description {
+        text-align: justify;
+        color:ghostwhite;
+        font-size: 15px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #contactInfo {
+        color:ghostwhite;
+        font-size: 30px;
+        padding-bottom: 20%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+    .project {
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        grid-row: 4;
+        padding: 2%;
+    }
+    .projectPic {
+        justify-self: center;   
+        align-self: center;
+        width: 100%;
+        height: auto;
+        grid-row-start: 1;
+        grid-row-end: 6;
+    }
+    .left {
+        grid-column: 1;
+    }
+    .right {
+        grid-column: 3;
+    }
+    .title {
+        grid-column: 2;
+        font-size: 30px;
+        color: #660025;
+        padding: 1% 5% 1% 5%;
+    }
+    .role {
+        grid-column: 2;
+        font-size:  20px;
+        color: #ff7c54;
+        padding: 1% 5% 1% 5%;
+    }
+    .description{
+        text-align: justify;
+        grid-column: 2;
+        font-size: 15px;
+        padding: 1% 5% 1% 5%;
+    }
+    .links {
+        grid-column: 2;
+        font-size: 15px;
+        padding: 1% 5% 1% 5%;
+    }
+    .seemore {
+        grid-row: 7;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    #expand {
+        text-align: center;  
+        display: block;
+    }
+    
+    #education, #work, #skills{
+        padding: 3%;
+        padding-left: 28%;
+        padding-right: 28%;
+    }
+    #educationTitle, #workTitle, #skillsTitle{
+        font-size: 30px;
+        color: #660025;
+    }
+    #educationTrack, #workProfession, #skillsTrack {
+        font-size:  20px;
+        color: #ff7c54;
+    }
+    #educationInfo, #workDescription, #skillsInfo {
+        font-size: 15px;
+        text-align: justify;
+        /*text-align: center;*/
+    }
+    
+    #footer {
+        display: grid;
+        grid-template-columns: 20% 40% 40%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        color: white;
+    }
+    #footerPic {
+        
+        border: 3px solid white; 
+        border-radius: 50%;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        justify-self: center;   
+        align-self: center;
+    }
+    #footerContact {
+        align-self: center;
+        font-size: 30px;
+        grid-row: 2;
+    }
+    #footerInfo {
+        font-size: 15px;
+        grid-row: 3;
+    }
+    #footerIcons {
+       justify-self: center;   
+        align-self: center;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column: 3;
+        font-size: 50px;
+    }
+}
+
+
+
+/*Mobile view only*/
+@media only screen and (max-width: 767px) {
+    .topnav {
+        left: 0;
+    top: 0;
+    bottom: none;
+    width: 100%;
+    position: fixed;
+    }
+    
+.topnav {
+  background-image: linear-gradient(to bottom right, #649ed9, #0a6ecc);
+}
+
+.topnav a {
+  color:ghostwhite;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 17px; 
+}
+    
+    #about {
+        display: grid;
+    }
+    #profilePicture {
+        border-radius: 5%;
+        border: 3px solid white; 
+        justify-self: center;   
+        align-self: center;
+        width: 50%;
+        height: auto;
+        grid-row: 2;
+    }
+    #title {
+        font-size: 40px;
+        color:ghostwhite;
+        justify-self: center;   
+        align-self: center;
+        text-align: center;
+        padding: 5%;
+        padding-bottom: 0%;
+        padding-top: 15%;
+        grid-row: 1;
+    }
+    #profession {
+        color:ghostwhite;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 2%;
+        padding-left: 5%;
+        padding-right: 5%;
+        grid-row: 3;
+    }
+    #description {
+        color:ghostwhite;
+        text-align: justify;
+        font-size: 12px;
+        text-align: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        grid-row: 4;
+    }
+    #contactInfo {
+        color:ghostwhite;
+        font-size: 20px;
+        text-align: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        grid-row: 5;
+    }
+    
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    
+    .topnav.responsive {}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive #dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    #dropdown-content {
+        top: 0px;  
+    } 
+    .project {
+        display: grid;
+        padding: 5%;
+        text-align: center;
+    }
+    .projectPic {
+        justify-self: center;   
+        align-self: center;
+        width: 90%;
+        height: auto;
+        grid-row: 2;
+        padding: 1%;
+    }
+    .picText {
+        grid-row: 3;
+        padding: none;
+        font-size: 8px;
+    }
+    .title {
+        grid-row: 1;
+        padding: 1%;
+    }
+    .role {
+        grid-row: 4;
+        padding: 1%;
+    }
+    .description{
+        text-align: justify;
+        font-size: 12px;
+        grid-row: 5;
+        padding: 1%;
+    }
+    .links {
+        font-size: 12px;
+        grid-row: 6;
+        padding: 1%;
+    }
+    .seemore {
+        grid-row: 7;
+        font-size: 14px;
+    }
+    
+    #education, #work, #skills {
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 5%;
+
+    }
+    .title, #workTitle, #educationTitle, #skillsTitle {
+        font-size: 20px;
+        color: #660025;
+    }
+    .role, #workProfession, #educationTrack, #skillsTrack {
+        font-size:  15px;
+        color: #ff7c54;
+    }
+    #workDescription, #educationInfo, #skillsInfo {
+        text-align: justify;
+        font-size: 12px;
+    }
+    
+    
+    #footer {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 1fr 1fr 1fr;
+        color: white;
+    }
+    #footerPic {
+        max-height: 90%; 
+        max-width: 90%;
+        border: 3px solid white; 
+        border-radius: 50%;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        justify-self: center;   
+        align-self: center;
+    }
+    #footerContact {
+        align-self: center;
+        text-align: center;
+        font-size: 20px;
+        grid-row: 1;
+    }
+    #footerInfo {
+        text-align: center;
+        font-size: 12px;
+        grid-row: 2;
+    }
+    #footerIcons {
+       justify-self: center;   
+        align-self: center;
+        grid-row: 3;
+        font-size: 30px;
+    }
+}
